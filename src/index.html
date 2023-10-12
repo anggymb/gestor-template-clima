@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="containerWeather day" id="containerWeather">
+   
+      <div class="inputTemp">
+        <form  class= "search__submit" id="search__submit">
+          <input type="text" class="search" id="search__input" placeholder="Digita tu ciudad" />
+          <button type="submit">boton</button>
+        </form>
+        <div class ="inputTemp__number">
+          <div class ="inputTemp__celsius" id ="degreeNumber">15</div>
+          <div class ="inputTemp__symbol">°C</div>
+        </div>
+
+        <div id="weatherIcon"></div>
+        <div class="inputTemp__description" id="description"></div>
+      </div>
+      <div class="location">
+        <div class="location__city" id = "timezone"></div>
+        <div class="location__date" id = "date"></div>
+      </div>
+     
+      <div class="weather">
+        <div class="weather__min"><small>min</small><span id="min">12</span> °C</div>
+        <div class="weather__max"><small>max</small><span id="max">18</span> °C</div>
+      </div>
+    </div>  
+      <script src="script.js"></script>
+  </body>
+</html>

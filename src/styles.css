@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: rgba(92, 129, 129, 0.3);
+  margin: 0;
+  
+}
+
+.title {
+  color: white;
+}
+
+.containerWeather {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 32.5rem;
+  border: 2px solid #333;
+  justify-content: space-between;
+  border-radius: 1rem;
+  
+}
+
+.containerWeather.day {
+  background-image: url("./images/sun.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+
+.containerWeather.night {
+  background-image: url("./images/noche.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+
+.inputTemp{
+  margin: 1rem auto;
+  width: 80%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0.4;
+}
+
+.search__submit{
+  display: flex;
+}
+
+.search__submit > button {
+  visibility: hidden;
+}
+
+.search{
+  width: 100%;
+  padding: 0.5 rem;
+  border-radius: .5rem;
+  border: none
+}
+
+.search:focus{
+  outline: none;
+}
+
+.inputTemp__number{
+  display: flex;
+  align-items:center
+}
+
+.inputTemp__celsius{
+  text-align: center;
+  color: white;
+  font-weight:bolder;
+  font-size: 4rem;
+}
+
+.inputTemp__symbol{
+  font-size: 3rem;
+  color: white;
+}
+
+.location{
+  flex:0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.location__date{
+  margin: 1.5rem;
+}
+
+.inputTemp__description, .location__city{
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: #333;
+}
+
+.containerWeather.night .inputTemp__description {
+  color: white;
+}
+
+.containerWeather.night .location__city{
+  color: white;
+}
+
+.containerWeather.night .weather__min, .containerWeather.night .weather__max{
+  color: white;
+}
+
+.containerWeather.night .location__date{
+  color: white;
+  font-weight: bolder;
+}
+
+
+
+.weather{
+  flex: 0.1;
+  border-top: 2px solid #333;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weather__min > span{
+  font-size: 1.4rem;
+  color: rgb(26, 26, 227);
+}
+
+.weather__max > span{
+  font-size: 1.4rem;
+  color: tomato;
+}
+
+
+
+/* Estilos para el botón de obtener clima */
